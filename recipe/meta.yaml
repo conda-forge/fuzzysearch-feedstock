@@ -29,7 +29,7 @@ test:
   imports:
     - fuzzysearch
   commands:
-    - "{{ PYTHON }} -m unittest discover tests -v"
+    - "python -m unittest discover tests -v"
 
 about:
   home: https://github.com/taleinat/fuzzysearch
