@@ -28,6 +28,8 @@ requirements:
 test:
   imports:
     - fuzzysearch
+  source_files:
+    - tests
   commands:
     - "python -m unittest discover tests -v"
 
