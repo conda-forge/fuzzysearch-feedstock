@@ -28,7 +28,7 @@ requirements:
 test:
   imports:
     - fuzzysearch
-  script:
+  commands:
     - "{{ PYTHON }} -m unittest discover tests -v"
 
 about:
