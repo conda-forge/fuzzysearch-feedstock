@@ -1,5 +1,5 @@
 {% set name = "fuzzysearch" %}
-{% set version = "0.7.1" %}
+{% set version = "0.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,16 +7,16 @@ package:
 
 source:
   url: https://github.com/taleinat/fuzzysearch/archive/v{{ version }}.tar.gz
-  sha256: 98d4aed8e7b04fdc9d359d9025a0efde090aa7b726ccc94c09cb99c8ac75f6c2
+  sha256: 9988136caef59687d203f8c494ae870a171a40198b53fc87a06b485916d105df
 
 build:
-  number: 2
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 1
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - {{ compiler('c') }}
-    - {{ compiler('cxx') }}  
+    - {{ compiler('cxx') }}
   host:
     - python
     - pip
@@ -39,7 +39,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Easy fuzzy search that just works, fast!'
+  summary: Easy fuzzy search that just works, fast!
 
 extra:
   recipe-maintainers:
