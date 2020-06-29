@@ -1,5 +1,5 @@
 {% set name = "fuzzysearch" %}
-{% set version = "0.7.2" %}
+{% set version = "0.7.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/taleinat/fuzzysearch/archive/v{{ version }}.tar.gz
-  sha256: 9988136caef59687d203f8c494ae870a171a40198b53fc87a06b485916d105df
+  sha256: 6c88b85468f2961c04a16da727cf9af77f6130806c558a8416ca84f950c231a8
 
 build:
   number: 1
